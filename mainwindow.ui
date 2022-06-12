@@ -144,142 +144,131 @@
      <property name="checkable">
       <bool>false</bool>
      </property>
-     <widget class="QWidget" name="gridLayoutWidget">
+     <widget class="QTextEdit" name="descriptioText">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>30</y>
-        <width>601</width>
-        <height>179</height>
+        <x>20</x>
+        <y>113</y>
+        <width>599</width>
+        <height>91</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0,0" columnstretch="0,0,0,0,0">
-       <property name="sizeConstraint">
-        <enum>QLayout::SetNoConstraint</enum>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>63</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>200</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>63</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Title</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>50</y>
+        <width>141</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dueDate">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Due Date</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Priority">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>50</y>
+        <width>77</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>None</string>
        </property>
-       <property name="leftMargin">
-        <number>0</number>
+      </item>
+      <item>
+       <property name="text">
+        <string>High</string>
        </property>
-       <property name="topMargin">
-        <number>0</number>
+      </item>
+      <item>
+       <property name="text">
+        <string>Medium</string>
        </property>
-       <property name="rightMargin">
-        <number>0</number>
+      </item>
+      <item>
+       <property name="text">
+        <string>Low</string>
        </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Description</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
-        <widget class="QComboBox" name="Priority">
-         <item>
-          <property name="text">
-           <string>None</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>High</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Medium</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Low</string>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item row="0" column="4">
-        <widget class="QLabel" name="Priority_2">
-         <property name="text">
-          <string>Priority</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLineEdit" name="lineEdit"/>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="dueDate">
-         <property name="text">
-          <string>Due Date</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="title">
-         <property name="text">
-          <string>Title</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLineEdit" name="lineEdit_2">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="2" column="1">
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="4" column="0" colspan="5">
-        <widget class="QTextEdit" name="descriptioText"/>
-       </item>
-      </layout>
+      </item>
+     </widget>
+     <widget class="QLabel" name="Priority_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>30</y>
+        <width>40</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Priority</string>
+      </property>
      </widget>
     </widget>
     <widget class="QTreeWidget" name="treeWidget">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>310</y>
+       <y>320</y>
        <width>641</width>
-       <height>211</height>
+       <height>201</height>
       </rect>
      </property>
-     <column>
-      <property name="text">
-       <string>Title</string>
-      </property>
-     </column>
     </widget>
     <widget class="QWidget" name="horizontalLayoutWidget_2">
      <property name="geometry">
