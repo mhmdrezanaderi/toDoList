@@ -269,6 +269,11 @@
        <height>201</height>
       </rect>
      </property>
+     <column>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </column>
     </widget>
     <widget class="QWidget" name="horizontalLayoutWidget_2">
      <property name="geometry">
@@ -341,6 +346,22 @@
     <hint type="destinationlabel">
      <x>664</x>
      <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Save</sender>
+   <signal>clicked()</signal>
+   <receiver>addTaskBox</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>93</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>286</y>
     </hint>
    </hints>
   </connection>
