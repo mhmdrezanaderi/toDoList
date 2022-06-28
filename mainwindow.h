@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "QPushButton"
 #include <QMainWindow>
 #include <QTreeWidgetItem>
 #include <QDebug>
@@ -25,6 +25,7 @@ private slots:
     void on_pushButton_2_clicked();
 
 private:
+
     Ui::MainWindow *ui;
     void displayTree();
 };
