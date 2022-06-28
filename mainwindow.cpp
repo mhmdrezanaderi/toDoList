@@ -1,10 +1,12 @@
 #include "mainwindow.h"
+#include <iostream>
 #include "ui_mainwindow.h"
 #include "QString"
-
+#include "QDebug"
 #include "QFrame"
 #include "QLabel"
 #include "QPushButton"
+using namespace std ;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -52,65 +54,10 @@ void MainWindow::on_DeletTask_clicked()
 }
 
 
-void MainWindow::createButtons(){
-    QFrame *f1 ;
-    QPushButton *a;
-
-     QGridLayout *l = new QGridLayout;
-      QWidget *h = new QWidget;
-    for(int i=0;i<31;i++){
-         f1 = new QFrame();
-
-        a= new QPushButton();
-
-
-        a->setText(QString::number(i+1));
-
-        if(i>=0 && i<=6){
-            l->addWidget(a,0,i);
-        }
-        else if(i>=7 && i<=13)
-        {
-            int j=i;
-            j-=7;
-            l->addWidget(a,1,j);
-        }
-        else if(i>=14 && i<=20)
-        {
-            int j=i;
-            j-=14;
-            l->addWidget(a,2,j);
-        }
-        else if(i>=21 && i<=27)
-        {
-            int j=i;
-            j-=21;
-            l->addWidget(a,3,j);
-        }
-        else
-        {
-            int j=i;
-            j-=28;
-            l->addWidget(a,4,j);
-        }
-
-    }
-
-
-    h->setLayout(l);
-     h->setGeometry(100,830,100,100);
-    h ->show();
-}
-
 void MainWindow::on_pushButton_2_clicked()
 {
 
 
-//    QPushButton *b = new QPushButton("index");
-//
-//    l->addWidget(b);
-//    a->setLayout(l);
-    createButtons();
 
 }
 
