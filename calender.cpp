@@ -2,6 +2,9 @@
 #include <QDate>
 #include <QApplication>
 #include <QMessageBox>
+
+#include "calender.h"
+
 #include "QDialog"
 #include <QDebug>
 
@@ -24,6 +27,7 @@ void Calender::on_setTime_clicked()
 
        month = ui->comboBox->currentText();
         int monthInt=  ui->comboBox->currentIndex();
+
        if(monthInt!= 0)
        {
             ui ->ShowMonth -> setText(month);
@@ -45,4 +49,11 @@ void Calender::on_setTime_clicked()
         }
 
 }
+
+void Calender::on_pushButton_clicked()
+{
+      QMessageBox::information(this,"date", year + " / " + month + " / " + day);
+    this->hide();
+}
+
 
