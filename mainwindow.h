@@ -22,12 +22,19 @@ public:
     QString dayMain;
     QString monthMain;
     QString yearMain;
+    QString title ;
+    QString status ;
+    QString description ;
+    QString time;
+    QString priority;
     QTreeWidgetItem *b= new QTreeWidgetItem();
 private slots:
     void on_Save_clicked();
     void on_DeletTask_clicked();
     void on_pushButton_2_clicked();
 
+
+    void on_pushButton_clicked();
 
 private:
 

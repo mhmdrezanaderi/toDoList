@@ -53,6 +53,7 @@ void Calender::on_setTime_clicked()
 
 void Calender::on_pushButton_clicked()
 {
+      QMessageBox::information(this,"date", year + " / " + month + " / " + day);
     this->hide();
 }
 
