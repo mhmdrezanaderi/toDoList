@@ -200,7 +200,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Time</string>
       </property>
      </widget>
      <widget class="QLabel" name="dueDate">
@@ -362,6 +362,70 @@
     <hint type="destinationlabel">
      <x>38</x>
      <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>208</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addTaskBox</sender>
+   <signal>clicked()</signal>
+   <receiver>Priority</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>597</x>
+     <y>181</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>descriptioText</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DeletTask</sender>
+   <signal>clicked()</signal>
+   <receiver>treeWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>375</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>301</x>
+     <y>473</y>
     </hint>
    </hints>
   </connection>

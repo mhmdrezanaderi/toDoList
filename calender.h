@@ -26,6 +26,7 @@ private slots:
 
 
     void on_setTime_clicked();
+    void on_pushButton_clicked();
 };
 
 #endif // CALENDER_H

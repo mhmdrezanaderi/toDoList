@@ -25,6 +25,7 @@ void Calender::on_setTime_clicked()
 
        month = ui->comboBox->currentText();
         int monthInt=  ui->comboBox->currentIndex();
+
        if(monthInt!= 0)
        {
             ui ->ShowMonth -> setText(month);
@@ -45,5 +46,13 @@ void Calender::on_setTime_clicked()
             QMessageBox::information(this,"Wrong","Please enter correct year !");
         }
 
+}
+
+
+
+
+void Calender::on_pushButton_clicked()
+{
+    this->hide();
 }
 
