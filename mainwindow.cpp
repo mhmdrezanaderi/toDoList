@@ -6,7 +6,9 @@
 #include "QFrame"
 #include "QLabel"
 #include "QPushButton"
+
 #include "QMessageBox"
+
 using namespace std ;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -90,7 +92,6 @@ void MainWindow::on_pushButton_2_clicked()
     s.show();
 
 }
-
 
 
 
