@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(82, 74, 102);
+color: rgb(0, 0, 0)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="Task">
     <property name="geometry">
@@ -22,6 +26,10 @@
       <width>211</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(102, 102, 152);
+</string>
     </property>
     <property name="text">
      <string>Task</string>
@@ -35,6 +43,10 @@
       <width>201</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(102, 102, 152);
+</string>
     </property>
     <property name="text">
      <string>Calender</string>
@@ -113,6 +125,10 @@
         <height>131</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(102, 102, 152);
+</string>
+      </property>
      </widget>
      <widget class="QLabel" name="label">
       <property name="geometry">
@@ -136,6 +152,10 @@
         <height>24</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(102, 102, 152);
+</string>
+      </property>
      </widget>
      <widget class="QLabel" name="title">
       <property name="geometry">
@@ -158,6 +178,10 @@
         <width>101</width>
         <height>25</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(102, 102, 152);
+</string>
       </property>
       <property name="text">
        <string>Time</string>
@@ -184,6 +208,10 @@
         <width>77</width>
         <height>24</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(102, 102, 152);
+</string>
       </property>
       <item>
        <property name="text">
@@ -232,6 +260,10 @@
      <layout class="QHBoxLayout" name="saveDeletlayout">
       <item>
        <widget class="QPushButton" name="Save">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(102, 102, 152);
+</string>
+        </property>
         <property name="text">
          <string>S</string>
         </property>
@@ -239,6 +271,10 @@
       </item>
       <item>
        <widget class="QPushButton" name="DeletTask">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(102, 102, 152);
+</string>
+        </property>
         <property name="text">
          <string>D</string>
         </property>
@@ -258,13 +294,21 @@
      <layout class="QHBoxLayout" name="btnlayout">
       <item>
        <widget class="QPushButton" name="pushButton_4">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(102, 102, 152);
+</string>
+        </property>
         <property name="text">
          <string>Q</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="Done">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(102, 102, 152);
+</string>
+        </property>
         <property name="text">
          <string>F</string>
         </property>
@@ -272,6 +316,10 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_3">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(102, 102, 152);
+</string>
+        </property>
         <property name="text">
          <string>E</string>
         </property>
@@ -279,6 +327,10 @@
       </item>
       <item>
        <widget class="QPushButton" name="AddTask">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(102, 102, 152);
+</string>
+        </property>
         <property name="text">
          <string>A</string>
         </property>
@@ -295,6 +347,10 @@
       <width>561</width>
       <height>551</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(102, 102, 152);
+</string>
     </property>
     <column>
      <property name="text">

@@ -16,17 +16,14 @@ public:
     QString day;
     QString month;
     QString year;
+    int monthInt;
 
 private:
-
     Ui::calender *ui;
 
 private slots:
-
-
-
     void on_setTime_clicked();
-    void on_pushButton_clicked();
+    void on_submit_clicked();
 };
 
 #endif // CALENDER_H

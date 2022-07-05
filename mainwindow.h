@@ -6,6 +6,7 @@
 #include <QDebug>
 #include <QModelIndex>
 #include "calender.h"
+#include "showWorks.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -18,6 +19,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void createButtons();
+
+    // ye object az calendar baraye gereftan date baraye har task
     Calender s;
     QString dayMain;
     QString monthMain;
@@ -28,14 +31,15 @@ public:
     QString time;
     QString priority;
     QTreeWidgetItem *b= new QTreeWidgetItem();
+    //create a calendar to show every day that user have task in current month and current year
+    showWorks work;
+
 private slots:
     void on_Save_clicked();
     void on_DeletTask_clicked();
     void on_pushButton_2_clicked();
-
-
-    void on_pushButton_clicked();
-
+    void on_Done_clicked();
+    void on_Calender_clicked();
 private:
 
     Ui::MainWindow *ui;

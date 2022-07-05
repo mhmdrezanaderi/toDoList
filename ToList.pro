@@ -11,15 +11,18 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    calender.cpp
+    calender.cpp \
+    showWorks.cpp
 
 HEADERS += \
     mainwindow.h \
-    calender.h
+    calender.h \
+    showWorks.h
 
 FORMS += \
     mainwindow.ui \
-    calender.ui
+    calender.ui \
+    showWorks.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

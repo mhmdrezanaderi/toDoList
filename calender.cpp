@@ -2,31 +2,24 @@
 #include <QDate>
 #include <QApplication>
 #include <QMessageBox>
-
-#include "calender.h"
-
 #include "QDialog"
 #include <QDebug>
+#include "calender.h"
 
 Calender::Calender(QWidget *parent)
     : QDialog(parent)
   , ui(new Ui::calender){
     ui->setupUi(this);
-
-
 }
 
 
-
+//get data of date and set under the set button
 void Calender::on_setTime_clicked()
 {
-
        day =  ui-> listWidget ->currentItem()->text();
        ui->ShowDay->setText(day);
-
-
        month = ui->comboBox->currentText();
-        int monthInt=  ui->comboBox->currentIndex();
+       monthInt=  ui->comboBox->currentIndex();
 
        if(monthInt!= 0)
        {
@@ -36,11 +29,9 @@ void Calender::on_setTime_clicked()
            QMessageBox::information(this,"Wrong","Please choose one month !");
        }
 
-
-
        year = ui->lineEdit->text();
        int yearInt = year.toInt();
-        if(yearInt>1900 && yearInt <=2080)
+        if(yearInt>2015 && yearInt <=2030)
         {
             ui -> ShowYear -> setText(year);
         }
@@ -50,9 +41,9 @@ void Calender::on_setTime_clicked()
 
 }
 
-void Calender::on_pushButton_clicked()
+void Calender::on_submit_clicked()
 {
-      QMessageBox::information(this,"date", year + " / " + month + " / " + day);
+    QMessageBox::information(this,"date", year + " / " + month + " / " + day);
     this->hide();
 }
 
