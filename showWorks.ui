@@ -1381,7 +1381,7 @@ color: rgb(0, 0, 0)</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_32">
+  <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -1440,7 +1440,7 @@ color: rgb(0, 0, 0)</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>pushButton_32</zorder>
+  <zorder>back</zorder>
   <zorder>pushButton_31</zorder>
   <zorder>pushButton_28</zorder>
   <zorder>pushButton_18</zorder>
